@@ -1,0 +1,171 @@
+<div class="container ">
+  
+  <form >
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="col">
+            <h4 class="mb-4"> Fiche d'assistance technique</h4>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="input-group input-group-merge">
+              <span class="input-group-text">
+                <i class="fa-solid fa-calendar-days"></i>
+              </span>
+              <input type="date" class="form-control" id="dateEng"/>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label">Porte :</label>
+            <div class="col-sm-3">
+              <div class="input-group input-group-merge">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-door-open"></i>
+                </span>
+                <input type="text" class="form-control" id="numPort" placeholder="N° porte" />
+              </div>
+            </div>
+            
+            <label class="col-sm-1 col-form-label">Entite :</label>
+            <div class="col-sm-6">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-landmark"></i>
+                </span>
+                <select class="form-select" id="entite">
+                  <option selected>Choisissez votre entité</option>
+                  <option value="1">MINISTERE DE LA SANTE PUBLIQUE</option>
+                  <option value="2">MINISTERE DE L'ECONOMIE ET DES FINANCES</option>
+                  <option value="3">MINISTERE DE L'INTERIEUR ET DE LA DECENTRALISATION</option>
+                  <option value="4">MINISTERE DES TRANSPORTS ET DE LA METEOROLOGIE</option>
+                  <option value="5">ECONOMIC DEVELOPMENT BOARD OF MADAGASCAR</option>
+                  <option value="6">CENTRE HOSPITALIER UNIVERSITAIRE MERE ET ENFANT TSARALALANA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label">Nom :</label>
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-user"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Votre nom" id="nom"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label">Contact :</label>
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <input type="text" id="contact" class="form-control" placeholder=" + 261 ** *** **"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label">Application :</label>
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                  <select class="form-select" id="application1">
+                    <option selected>Choisissez la zone d'intervention.</option>
+                    <option value="Egp">Egp</option>
+                    <option value="Sigmp">Sigmp</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                </div>
+              </div>
+
+            <label class="col-sm-2 col-form-label">Application :</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-desktop"></i>
+                </span>
+                <input type="text" id="application2" class="form-control"placeholder="Autre Application"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label">Type d'intervention :</label>
+            <div class="col-sm-10">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-wrench"></i>
+                </span>
+                <select class="form-select" id="typeinter">
+                  <option selected>Choisissez le type d'intervention</option>
+                  <option value="1">assistance technique</option>
+                  <option value="2">Aide à la manipulation</option>
+                  <option value="3">Création de dossier</option>
+                  <option value="4">Création de contract</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <label class="col-sm-2 form-label">Objet de l'intervention</label>
+            <div class="col-sm-10">
+              <div class="input-group input-group-merge">
+                <span class="input-group-text" >
+                  <i class="fa-regular fa-comment-dots"></i>
+                </span>
+                <textarea id="objet" class="form-control" placeholder="Veuillez écrire ici l'objet de votre demande."></textarea>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Intevenant :</label>
+            <div class="col-sm-4">
+              <div class="input-group input-group-merge">
+                <span id="basic-icon-default-fullname2" class="input-group-text">
+                  <i class="fa-solid fa-users-gear"></i>
+                </span>
+                
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choisissez votre intervention.</option>
+                  <option value="1">Chef Dera</option>
+                  <option value="2">Mr Rado</option>
+                  <option value="3">Stagiaire</option>
+                </select>
+              </div>
+            </div>
+
+            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Autre intervenant :</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-users-gear"></i>
+                </span>
+                <input type="text" id="interv" class="form-control" placeholder="Veuillez écrire ici l'intervenant"/>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="d-md-flex justify-content-md-end mt-4">
+            <button type="button" class="btn btn-info btn-icon-text">
+              Suivant <i class="fa-solid fa-angle-right"></i>                                                                           
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+
+  </form>
+</div>

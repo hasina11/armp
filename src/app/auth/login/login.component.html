@@ -1,0 +1,97 @@
+<!-- <div class="body">
+
+    <div class="wrapper">
+        <div class="sct brand">
+            <h3>ARMP</h3>
+        </div>
+        <div>
+            <div>email : {{ form.email }}</div>
+            <div>pass : {{ form.password }}</div>
+        </div>
+        <div class="sct login">
+            <form 
+                name="form" 
+                #f="ngForm"
+                (ngSubmit)="f.form.valid && onSubmit()"
+            >
+                <h3>Member Login</h3>
+                <input type="text" name="email" id="email" placeholder="Email" [(ngModel)]="form.email" #email="ngModel" required>
+                <div class="form_error" *ngIf="email.errors && f.submitted">
+                    Le champs est obligatoire !!
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="form.password" #password="ngModel" required minlength="5">
+                
+                <div class="form_error" *ngIf="password.errors && f.submitted">
+                    <div *ngIf="password.errors['required']">Le champs est obligatoire !!</div>
+                    <div *ngIf="password.errors['minlength']">Veuillez saisir au moins 5 caractères dans ce champ. !</div>
+                </div>
+                
+                <div class="forgot-remember">
+                        <label class="control control-checkbox">
+                                Remember me
+                                    <input type="checkbox"/>
+                                <div class="control_indicator"></div>
+                            </label>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div> 
+                </div>
+                
+                <input type="submit" name="send" value="Se Connecter">
+            </form>
+    </div>
+    </div>
+</div> -->
+
+<body>
+    
+      <div class="container">
+          <div class="img">
+                <img src="../../../assets/img/Logo_hd_MEF-PETIT-2.png" alt="">
+          </div>
+          <div class="login-container">
+            <form 
+                name="form" 
+                #f="ngForm"
+                (ngSubmit)="f.form.valid && onSubmit()"
+            >
+              <img class="avatar" src="../../../assets/img/4c1e653d-04e7-4e45-ac2b-1ac7888fb3f5.jpg" alt="">
+                  <h2>Bienvenu</h2>
+                  <div class="input-div one">
+                      <div class="i">
+                          <i class="fas fa-user"></i>
+                      </div>
+                      <div>
+                        <input type="text" class="form-control input" 
+                        placeholder="First name" aria-label="First name"
+                        name="email" id="email"
+                        [(ngModel)]="form.email" #email="ngModel" required
+                        >
+                      </div>
+
+                  </div>
+                  <div class="alert alert-danger" *ngIf="email.errors && f.submitted">
+                    Le champs est obligatoire !!
+                </div>
+                  <div class="input-div two">
+                      <div class="i">
+                          <i class="fas fa-lock"></i>
+                      </div>
+                      <div>
+                        <input class="form-control mb-0 input" 
+                        placeholder="Mot de Passe" aria-label="Mot de Passe" type="password"
+                        name="password" id="password"
+                        [(ngModel)]="form.password" #password="ngModel" required minlength="5"
+                        >
+                      </div>
+                  </div>
+                  <div class="alert alert-danger" *ngIf="password.errors && f.submitted">
+                    <div *ngIf="password.errors['required']">Le champs est obligatoire !!</div>
+                    <div *ngIf="password.errors['minlength']">Veuillez saisir au moins 5 caractères dans ce champ. !</div>
+                </div>
+                  <a href="#" class="text-primary">Mot de passe oublier !</a>
+                  <input class="btn" type="submit" name="send" value="Se Connecter">
+              </form>
+          </div>
+      </div>
+  </body>
